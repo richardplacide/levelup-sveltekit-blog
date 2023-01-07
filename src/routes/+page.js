@@ -3,9 +3,10 @@ export async function load({ fetch, parent }) {
     const res = await fetch('https://syntax.fm/api/shows/latest');
     const data = await res.json();
 
-    // mocking parent data functionality here we're taking data from layout
+    // mocking parent data functionality here we're taking data from layout. first we used sveltekit load function 
+    // with the parent data parameter
     const parent_data = await parent();
-    console.log(parent_data);
+    //console.log(parent_data);
     
     return {
         latest_episode: data
