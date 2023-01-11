@@ -3,6 +3,7 @@
     import Footer from "./Footer.svelte";
     import Episodes from "./Episodes.svelte";
     import "./styles.css";
+    import "./bulma.min.css";
 
     export let data;
     $: ({all_episodes} = data);
